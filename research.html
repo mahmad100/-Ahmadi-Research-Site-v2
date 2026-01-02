@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZ83HZHRCG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NZ83HZHRCG');
+</script>
+
+  <title>Research – Ahmadi Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <div class="logo-row">
+          <a href="index.html">
+            <img src="public/logo.png" alt="Ahmadi Research Logo" class="logo-img" />
+          </a>
+        </div>
+        <nav class="nav-links">
+          <a href="research.html">Research</a>
+          <a href="approach.html">Approach</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section section--light">
+      <div class="container">
+        <div class="section-title-row">
+          <div>
+            <div class="section-kicker">Research</div>
+            <h1 class="section-title">Equity & macro projects</h1>
+          </div>
+          <p class="section-subtitle">
+            Decks, notes, and experiments that explore single-name stories, macro context, ETF valuation, and methods.
+          </p>
+        </div>
+
+        <!-- === START: RESEARCH PROJECTS LIST === -->
+        <div class="cards-grid">
+         
+          <!-- AI Boom -->
+        <div class="work-card">
+          <a href="./The-Economics-of-AI-Boom-in-US-Markets.pdf"
+             class="work-card-inner"
+             target="_blank"
+             rel="noopener noreferrer">
+        
+            <div class="work-label">AI & Market Cycles</div>
+            <div class="work-title">The Economics of AI Boom in U.S. Markets</div>
+        
+            <p class="work-desc">
+              An empirical analysis of AI-driven equity concentration, valuation expansion,
+              capital inflows, and unpriced externalities across U.S. markets following the
+              launch of ChatGPT.
+            </p>
+        
+            <div class="work-meta">
+              <span>Slide deck • December 2025</span>
+              <span class="work-link">Open PDF ↗</span>
+            </div>
+          </a>
+        </div>
+          <!-- Palantir thesis -->
+          <a href="Palantir%20Technologies%20Inc.pdf" target="_blank" rel="noopener" class="work-card">
+            <div class="work-card-inner">
+              <div class="work-label">Equity thesis</div>
+              <div class="work-title">Beyond the Buzz: Why Palantir’s Valuation May Not Add Up</div>
+              <p class="work-desc">
+                Deep dive on PLTR’s business model, government vs commercial mix, and bubble-like multiples versus SaaS
+                peers. Argues current pricing bakes in very optimistic scenarios.
+              </p>
+              <div class="work-meta">
+                <span>Slide deck · September 2025</span>
+                <span class="work-link">Open PDF ↗</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- ETF valuation spreads -->
+          <a href="Are%20US%20Equties%20Overvalued.pdf" target="_blank" rel="noopener" class="work-card">
+            <div class="work-card-inner">
+              <div class="work-label">Macro & factors</div>
+              <div class="work-title">US vs Global ETF Valuation Spreads</div>
+              <p class="work-desc">
+                Benchmarks U.S. equities against a basket of global ETFs on P/E, P/B, dividend yield, and
+                mega-cap concentration to test whether the current U.S. valuation premium is supported
+                by fundamentals or driven by multiples.
+              </p>
+          
+              <div class="work-meta">
+                <span>Slide deck • October 2025</span>
+                <span class="work-link">Open PDF ↗</span>
+              </div>
+            </div>
+          </a>
+
+
+          <!-- Monte Carlo methods -->
+          <div class="work-card">
+            <div class="work-card-inner">
+              <div class="work-label">Methods</div>
+              <div class="work-title">Monte Carlo for Index Mixes</div>
+              <p class="work-desc">
+                Uses historical distributions to simulate thousands of portfolio paths, estimating drawdowns and upside
+                for different index mixes across regimes.
+              </p>
+              <div class="work-meta">
+                <span>Simulation project</span>
+                <span class="work-link">Summary coming soon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- === END: RESEARCH PROJECTS LIST === -->
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>© <span id="year"></span> Ahmadi Research. Nothing here is investment advice.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="approach.html">Approach</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+<footer>
+  <!-- your footer stuff -->
+</footer>
+</div>
+
+<!-- Footer year -->
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<!-- Navbar scroll logic -->
+<script>
+  const header = document.querySelector(".site-header");
+
+  function updateNavState() {
+    if (window.scrollY <= 5) {
+      header.classList.add("nav-top");      // pure white at top
+    } else {
+      header.classList.remove("nav-top");   // liquid glass when scrolling
+    }
+  }
+
+  window.addEventListener("scroll", updateNavState);
+  window.addEventListener("load", updateNavState);
+</script>
+
+</body>
+</html>
+
